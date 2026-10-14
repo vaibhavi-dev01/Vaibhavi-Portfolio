@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Architectural Rings -->
+  <circle cx="200" cy="200" r="160" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+  <circle cx="200" cy="200" r="130" stroke="#475569" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Professional Avatar Silhouette -->
+  <!-- Shoulders & Blazer -->
+  <path d="M90 380 C90 300, 130 260, 200 260 C270 260, 310 300, 310 380 Z" fill="url(#accentGrad)" opacity="0.95"/>
+  <!-- Inner Collar / Shirt -->
+  <path d="M165 260 L200 320 L235 260 Z" fill="#f8fafc"/>
+  <path d="M185 260 L200 305 L215 260 Z" fill="#0f172a"/>
+
+  <!-- Neck -->
+  <rect x="180" y="210" width="40" height="60" rx="8" fill="#fde68a"/>
+
+  <!-- Head / Face -->
+  <circle cx="200" cy="170" r="55" fill="#fde68a"/>
+  
+  <!-- Sleek Professional Hairstyle -->
+  <path d="M140 170 C140 100, 260 100, 260 170 C250 135, 230 120, 200 120 C165 120, 150 140, 140 170 Z" fill="#1e293b"/>
+  <path d="M140 170 C138 210, 148 240, 158 245 C150 220, 150 180, 155 170 Z" fill="#1e293b"/>
+  <path d="M260 170 C262 210, 252 240, 242 245 C250 220, 250 180, 245 170 Z" fill="#1e293b"/>
+
+  <!-- Monogram Badge -->
+  <circle cx="200" cy="340" r="26" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="200" y="347" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f8fafc" text-anchor="middle">VP</text>
+</svg>

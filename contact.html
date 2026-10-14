@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vaibhavi Patil - Software Engineer</title>
+    <meta name="description"
+        content="Get in touch with Vaibhavi Sharad Patil for software developer internships, full stack collaborations, or inquiries. Email: vp388953@gmail.com">
+    <meta name="author" content="Vaibhavi Sharad Patil">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Atmosphere -->
+    <div class="bg-atmosphere">
+        <canvas id="particle-canvas" class="particle-canvas"></canvas>
+        <div class="ambient-grid"></div>
+        <div class="ambient-glow glow-top"></div>
+        <div class="ambient-glow glow-bottom"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-monogram">VP</span>
+                <div class="logo-text-group">
+                    <span class="logo-name">Vaibhavi Patil</span>
+                    <span class="logo-role">Computer Engineering</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="achievements.html" class="nav-link">Achievements</a></li>
+                    <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark and Light Mode"
+                    title="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <!-- Direct Contact Header Button (NO "Let's Talk") -->
+                <a href="contact.html" class="btn-contact-nav" title="Contact Vaibhavi">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Page Hero Banner -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-kicker"><i class="fa-solid fa-envelope"></i> LET'S CONNECT</div>
+                <h1 class="page-title">Get In <span class="gradient-text">Touch</span></h1>
+                <p class="page-subtitle">Have a question, software engineering opportunity, or project collaboration in mind? Feel free to reach out!</p>
+                <div class="page-accent-bar"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="subpage-container">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Details Panel -->
+                    <div class="contact-info-panel">
+                        <div class="contact-header-text">
+                            <h2>Let's build something great together.</h2>
+                            <p>
+                                I am actively seeking software development internships, project collaborations, and entry-level engineering opportunities. My inbox is always open!
+                            </p>
+                        </div>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+                                <div class="detail-info">
+                                    <span class="detail-label">Full Name</span>
+                                    <span class="detail-value">Vaibhavi Sharad Patil</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="detail-info">
+                                    <span class="detail-label">Email Address</span>
+                                    <a href="mailto:vp388953@gmail.com" class="detail-link">
+                                        vp388953@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="detail-info">
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Shirpur / Dhule, Maharashtra, India</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="detail-info">
+                                    <span class="detail-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/vaibhavi-patil-27b2b7423/" target="_blank"
+                                        rel="noopener noreferrer" class="detail-link">
+                                        vaibhavi-patil-27b2b7423 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="detail-info">
+                                    <span class="detail-label">GitHub</span>
+                                    <a href="https://github.com/vaibhavi-dev01" target="_blank"
+                                        rel="noopener noreferrer" class="detail-link">
+                                        vaibhavi-dev01 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon" style="background: rgba(217, 119, 6, 0.12); border-color: rgba(217, 119, 6, 0.3); display: flex; align-items: center; justify-content: center;">
+                                    <img src="assets/codechef-icon.svg" alt="CodeChef" style="width: 22px; height: 22px; border-radius: 50%; object-fit: contain;">
+                                </div>
+                                <div class="detail-info">
+                                    <span class="detail-label">CodeChef Profile</span>
+                                    <a href="https://www.codechef.com/users/vaibhavi_dev01" target="_blank"
+                                        rel="noopener noreferrer" class="detail-link">
+                                        vaibhavi_dev01 (235+ Problems Solved) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resume Card -->
+                        <div class="resume-box">
+                            <div class="resume-icon">
+                                <i class="fa-regular fa-file-pdf"></i>
+                            </div>
+                            <div class="resume-text">
+                                <h3>Curriculum Vitae / Resume</h3>
+                                <p>Click to download or view my comprehensive resume profile.</p>
+                            </div>
+                            <a href="assets/resume.pdf" download="Vaibhavi_Patil_Resume.pdf" id="resume-download-btn" class="btn btn-sm btn-primary">
+                                <i class="fa-solid fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form">
+                            <h2 class="form-title">Send a Direct Message</h2>
+
+                            <div class="form-group">
+                                <label for="sender-name">Your Full Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="sender-name" name="name" placeholder="e.g. John Doe"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sender-email">Your Email Address <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="sender-email" name="email"
+                                        placeholder="e.g. john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sender-subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-tag input-icon"></i>
+                                    <input type="text" id="sender-subject" name="subject"
+                                        placeholder="Internship Opportunity / Project Inquiry"
+                                        value="Internship / Collaboration Inquiry">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sender-message">Message <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fa-solid fa-message input-icon"></i>
+                                    <textarea id="sender-message" name="message" rows="4"
+                                        placeholder="Hello Vaibhavi, I'd like to discuss an opportunity or collaboration..." required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-monogram-sm">VP</span>
+                    <span>Vaibhavi Patil</span>
+                </a>
+                <p class="footer-tagline">Computer Engineering Student &amp; Full Stack Web Developer.</p>
+            </div>
+
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://github.com/vaibhavi-dev01" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile" title="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaibhavi-patil-27b2b7423/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.codechef.com/users/vaibhavi_dev01" target="_blank"
+                        rel="noopener noreferrer" aria-label="CodeChef Profile" title="CodeChef Profile (@vaibhavi_dev01)">
+                        <img src="assets/codechef-icon.svg" alt="CodeChef" style="width: 18px; height: 18px; border-radius: 50%;">
+                    </a>
+                    <a href="mailto:vp388953@gmail.com" aria-label="Email Address" title="Email Vaibhavi">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    &copy; <span id="current-year">2026</span> <strong>Vaibhavi Sharad Patil</strong>. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon" id="toast-icon"></div>
+        <div class="toast-message" id="toast-message"></div>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-wrapper" id="chatbot-wrapper">
+        <button class="chatbot-trigger-btn" id="chatbot-trigger-btn" aria-label="Open AI Portfolio Chatbot" title="Chat with Vaibhavi's AI Bot">
+            <div class="bot-badge-pulse"></div>
+            <div class="bot-avatar-icon">
+                <i class="fa-solid fa-comment-dots icon-chat"></i>
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <span class="bot-online-indicator" title="Online"></span>
+            <div class="bot-bubble-hint" id="bot-bubble-hint">
+                <span>👋 Hi! Ask me anything!</span>
+                <button class="hint-close-btn" id="hint-close-btn" aria-label="Close hint">&times;</button>
+            </div>
+        </button>
+
+        <div class="chatbot-panel" id="chatbot-panel" aria-hidden="true">
+            <div class="chatbot-header">
+                <div class="chatbot-profile">
+                    <div class="chatbot-header-avatar">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span class="header-online-dot"></span>
+                    </div>
+                    <div class="chatbot-header-info">
+                        <h4 class="chatbot-header-name">Vaibhavi's AI Assistant</h4>
+                        <span class="chatbot-header-status">
+                            <i class="fa-solid fa-circle"></i> Online &bull; Instant Knowledge
+                        </span>
+                    </div>
+                </div>
+                <div class="chatbot-header-actions">
+                    <button class="chatbot-header-btn" id="chatbot-sound-toggle" aria-label="Toggle Sound" title="Toggle Sound Effects">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                    <button class="chatbot-header-btn" id="chatbot-clear-btn" aria-label="Clear Chat History" title="Clear Conversation">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                    <button class="chatbot-header-btn chatbot-close-btn" id="chatbot-close-btn" aria-label="Close Chat Window" title="Close Chat">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chatbot-body" id="chatbot-messages">
+                <!-- Messages populated dynamically -->
+            </div>
+
+            <div class="chatbot-suggestions" id="chatbot-suggestions">
+                <div class="suggestions-label"><i class="fa-solid fa-bolt"></i> Quick Questions:</div>
+                <div class="suggestions-chips-track">
+                    <button class="chat-chip" data-query="Tell me about her 2nd Prize in Project Competition">🏆 2nd Prize Award</button>
+                    <button class="chat-chip" data-query="What coursework has she studied?">🌐 Computer Networks</button>
+                    <button class="chat-chip" data-query="Tell me about her web development internship">💼 Internship</button>
+                    <button class="chat-chip" data-query="What projects has Vaibhavi developed?">💻 Projects</button>
+                    <button class="chat-chip" data-query="What are her core technical skills?">🛠️ Tech Skills</button>
+                    <button class="chat-chip" data-query="What is her educational background and score?">🎓 Education (93.3%)</button>
+                    <button class="chat-chip" data-query="How can I connect with or hire Vaibhavi?">📬 Contact & Hire</button>
+                </div>
+            </div>
+
+            <div class="chatbot-footer">
+                <form id="chatbot-form" class="chatbot-input-form">
+                    <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Ask about awards, skills, projects..." autocomplete="off" maxlength="200" required>
+                    <button type="submit" id="chatbot-send-btn" class="chatbot-send-btn" aria-label="Send Message" title="Send message">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="chatbot-footer-sub">
+                    <span>Interactive Portfolio Bot &bull; Instant Static Responses</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
